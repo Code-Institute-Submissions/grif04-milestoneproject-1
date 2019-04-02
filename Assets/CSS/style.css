@@ -1,20 +1,23 @@
 
 /* -------------------------------------------------------Background Image / Images */
 
+
 .img-fluid {
     background-image: url(/Assets/Images/background-image.jpg);
-    position: fixed;
+    position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding-bottom: 150px;
 }
+
 
 /* -------------------------------------------------------Navigation Bar */
 
 .nav {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     padding-bottom: 50px;
 }
@@ -52,6 +55,7 @@
     color: #fafafa;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 6px;
 }
 
 .subtitle {
@@ -63,6 +67,24 @@
 }
 
 /* -------------------------------------------------------Colors */
+
+
+.fa {
+    color: #fafafa;
+    font-size: 20px;
+    letter-spacing: 10px;
+    margin: 0 auto;
+}
+
+.fa:hover {
+    color: orange;
+}
+
+.text-footer {
+    color: #fafafa;
+    text-align: center;
+    font-weight: 100;
+}
 
 /* -------------------------------------------------------Buttons */
 
@@ -88,7 +110,7 @@
 
 .button-container,
 .title-container {
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 .button-container {
@@ -99,21 +121,74 @@
     margin-right: 0;
 }
 
-/* -------------------------------------------------------Footer*/
-
-.ui.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    background-color: orange;
-    padding-right: 0;
+.container-fluid {
     padding-left: 0;
+    padding-right: 0;
 }
 
+/* -------------------------------------------------------Footer*/
+
+.footer {
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 25px;
+}
+
+.list-inline-item {
+    text-align: center;
+}
+
+
+/* -------------------------------------------------------------------------about*/
+.about-background {
+    position: relative;
+    display: inline-block;
+    height: 315px;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text {
+    height: 315px;
+    display: inline-block;
+    color: #fafafa;
+    font-family: "Roboto" sans-serif;
+    text-align: left;
+}
+
+.about-video {
+    background-size: cover;
+    display: inline-block;
+    width: auto;
+    /*height: 50%;*/
+    /*border-radius: 10px;*/
+    /*padding-top: 50px;*/
+    /*padding-left: 50px;*/
+    filter: grayscale(100%) brightness(125%)
+}
+
+.about-heading {
+    
+}
+
+.about-paragraph {
+    
+    
+}
 
 /* -------------------------------------------------------Fixes*/
 
 .hvr-grow {
-    display: block;   /* this code fixes the position of the Name Title */
+    display: block;   /* this code fixes the position of the Name Title  */
+}
+
+a:hover {
+    text-decoration: none;  /* this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
 }
