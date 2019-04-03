@@ -3,7 +3,7 @@
 
 
 .img-fluid {
-    background-image: url(../assets/images/background-image.jpg);
+    background-image: url(/assets/images/background-image.jpg);
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
