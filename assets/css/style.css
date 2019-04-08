@@ -4,13 +4,10 @@
 
 .img-fluid {
     background-image: url(/assets/images/background-image.jpg);
-    position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: auto;
-    padding-bottom: 150px;
+    padding-bottom: 300px;
 }
 
 
@@ -19,7 +16,6 @@
 .nav {
     position: fixed;
     z-index: 1;
-    padding-bottom: 50px;
 }
 
 .nav-item a {
@@ -29,13 +25,52 @@
 .nav-item a:hover {
     color: orange;
 }
+
 .menucontainer {
     padding-left: 60%;
-    background-color: transparent;
-    color: #fafafa;
 }
 
 /* ------------------------Dropdown Menu */
+
+.dropdown {
+    width: auto;
+    position: relative;
+}
+
+.dropdownmenu {
+    list-style: none;
+    padding-left: 10px;
+    position: absolute;
+    text-align: left;
+    z-index: -1;
+    transform: translateY(-125%);
+    transition: transform .5s ease-in;
+    
+}
+
+.dropdownitem {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+.dropdown:hover {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdownmenu {
+    transform: translateY(0px);
+}
+
+.dropdownLink {
+    color: #fafafa;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
 
 /* -------------------------------------------------------Text Headings & paragraphs*/
 
@@ -68,6 +103,9 @@
 
 /* -------------------------------------------------------Colors */
 
+body {
+    background-color: #000;
+}
 
 .fa {
     color: #fafafa;
@@ -101,21 +139,21 @@
     font-size: 12px;
 }
 
-.btn:hover{
+.btn:hover {
     color: #fafafa;   /* this is an override of the hvr-grow animation for home page buttons that is resetting the colour to black */
 }
 
 
 /* -------------------------------------------------------Paddings & Margins */
 
-.button-container,
+/*.button-container,*/            /* ------ Older Button Code Idea ------ */
 .title-container {
     padding-top: 15%;
 }
 
-.button-container {
-    padding-left:25px;
-}
+/*.button-container {*/
+/*    padding-left:25px;*/
+/*}*/    /* ------ Older Button Code Idea ------ */
 
 .row {
     margin-right: 0;
@@ -130,7 +168,7 @@
 
 .footer {
     margin: 0 auto;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 75px;
@@ -146,41 +184,52 @@
 
 
 /* -------------------------------------------------------------------------about*/
-.about-background {
+
+.about-container {
     position: relative;
-    display: inline-block;
     height: 315px;
-    background-color: black;
-    padding: 0;
-    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 25px;
 }
 
+/*.about-background {*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    height: auto;*/
+/*    background-size: cover;*/
+/*    background-color: black;*/
+/*}*/
+
 .about-text {
-    height: 315px;
-    display: inline-block;
+    float: right;
+    background-color: #000;
     color: #fafafa;
     font-family: "Roboto" sans-serif;
     text-align: left;
+    padding: 30px,40px;
 }
 
 .about-video {
     background-size: cover;
-    display: inline-block;
-    width: auto;
-    /*height: 50%;*/
-    /*border-radius: 10px;*/
-    /*padding-top: 50px;*/
-    /*padding-left: 50px;*/
+    text-align: center;
+    float: left;
     filter: grayscale(100%) brightness(125%)
 }
 
 .about-heading {
+    padding-left: 25px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    color: #fafafa;
     
 }
 
 .about-paragraph {
-    
-    
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-bottom: 75px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
 }
 
 /* -------------------------------------------------------Fixes*/
@@ -191,4 +240,8 @@
 
 a:hover {
     text-decoration: none;  /* this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
+}
+
+li {
+ list-style: none;
 }

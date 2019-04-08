@@ -21,15 +21,21 @@
             <div class="col-md-12">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About">About</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link dropdown" href="#">Storytelling</a>
-                    </li>
+                    <div class="dropdown">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storytelling</a>
+                        </li>
+                        <ul class="dropdownmenu">
+                            <li class="dropdownitem"><a href="#" class="dropdownLink">Schools</a></li>
+                            <li class="dropdownitem"><a href="#" class="dropdownLink">Performances</a></li>
+                            <li class="dropdownitem"><a href="#" class="dropdownLink">Mexican Tales</a></li>
+                        </ul>
+                    </div>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#">Be-Heard</a>
@@ -50,19 +56,21 @@
                 <div class="col-md-12">
                     <div class="img-fluid" alt="Background Image">
                         <div class="row no-gutters">
-                            <div class="col-md-4 button-container">
-                                <button type="button" class="btn hvr-grow">Storytelling</button>
-                            </div>
-                            <div class="col-md-4 title-container hvr-grow">
+
+                            <!--<div class="col-md-4 button-container">-->
+                            <!--    <button type="button" class="btn hvr-grow">Storytelling</button>-->
+                            <!--</div>-->
+
+                            <div class="col title-container hvr-grow">
                                 <a href="#About">
                                     <h1 class="name">Mike Payton</h1>
                                     <h2 class="title">Storyteller</h2>
                                     <p class="subtitle">Penchant for the strange and unexplainable, <br> I've been telling stories all my life.</p>
                             </div>
                             </a>
-                            <div class="col-md-4 button-container">
-                                <button type="button" class="btn hvr-grow">Be-Heard</button>
-                            </div>
+                            <!--<div class="col-md-4 button-container">-->
+                            <!--    <button type="button" class="btn hvr-grow">Be-Heard</button>-->
+                            <!--</div>-->
                         </div>
                     </div>
                 </div>
@@ -72,16 +80,22 @@
 
 
         <!--About Section----------------------->
-        <div class="container-fluid">
+
+        <div class="container-fluid about-container">
             <div class="row no-gutters about-background">
-                <div class="col-4 about-video">
+                <div class="col-md-4 col-sm-6 about-video">
                     <iframe width="auto" height="315" src="https://www.youtube.com/embed/Xcq2Vzb3zms?controls=0&amp;start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="false"></iframe>
                 </div>
-                <div class="col-8 about-text">
+                <div class="col-md-8 col-sm-6 about-text">
                     <h2 id="About" class="about-heading">About Mike</h2>
                     <br>
                     <p class="about-paragraph">Mike has been telling tall tales all his life, and decided to turn this into a career in 2008. Drawing his tales from Britain’s rich heritage and also from the four corners of the earth. His delivery is warm and engaging with a penchant
-                        for the strange and unexplainable.</p>
+                        for the strange and unexplainable.
+                        <br>
+                        <br> A secondary school teacher for 19years and working within Mexico between 2004 - 2008, his students taught him many strange and magical Mexican tales, Mike discovered by using the artform of Storytelling in classes, it became
+                        a powerful teaching tool and has incorporated these stories into his performances.
+                    </p>
+
                 </div>
             </div>
         </div>
