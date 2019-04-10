@@ -1,6 +1,4 @@
-
-/* -------------------------------------------------------Background Image / Images */
-
+/* -------------------------------------------------------Background Image / Logo */
 
 .img-fluid {
     background-image: url(/assets/images/background-image.jpg);
@@ -10,6 +8,16 @@
     padding-bottom: 300px;
 }
 
+.logo {
+    
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    color: orange;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    padding-left: 25px;
+}
 
 /* -------------------------------------------------------Navigation Bar */
 
@@ -45,7 +53,7 @@
     z-index: -1;
     transform: translateY(-125%);
     transition: transform .5s ease-in;
-    
+
 }
 
 .dropdownitem {
@@ -54,7 +62,7 @@
     display: block;
     background-color: transparent;
     padding: 10px;
-    
+
 }
 
 .dropdown:hover {
@@ -73,8 +81,6 @@
 
 
 /* -------------------------------------------------------Text Headings & paragraphs*/
-
-
 
 .name {
     font-family: 'Amatic SC', cursive;
@@ -127,33 +133,29 @@ body {
 /* -------------------------------------------------------Buttons */
 
 .btn {
-    display: block;
-    height: 100px;
-    width: 100px;
+
+    display: inline-block;
     border-radius: 100px;
     color: #fafafa;
     border-color: #fafafa;
-    margin: 0 auto;
-    background-color: transparent;
+    background-color: #004380;
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.btn:hover {
-    color: #fafafa;   /* this is an override of the hvr-grow animation for home page buttons that is resetting the colour to black */
-}
+/*.btn:hover {*/
+/*    color: #fafafa;*/
+/*    background-color: blue;*/
+    /* this is an override of the hvr-grow animation for home page buttons that is resetting the colour to black */
+/*}*/
+
 
 
 /* -------------------------------------------------------Paddings & Margins */
 
-/*.button-container,*/            /* ------ Older Button Code Idea ------ */
 .title-container {
     padding-top: 15%;
 }
-
-/*.button-container {*/
-/*    padding-left:25px;*/
-/*}*/    /* ------ Older Button Code Idea ------ */
 
 .row {
     margin-right: 0;
@@ -164,52 +166,27 @@ body {
     padding-right: 0;
 }
 
-/* -------------------------------------------------------Footer*/
-
-.footer {
-    margin: 0 auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 75px;
-    background-color: black;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 25px;
-}
-
-.list-inline-item {
-    text-align: center;
-}
 
 
-/* -------------------------------------------------------------------------about*/
+/* -------------------------------------------------------------------------About Section*/
 
 .about-container {
     position: relative;
-    height: 315px;
-    padding-top: 60px;
-    padding-bottom: 25px;
+    height: 500px;
 }
 
-/*.about-background {*/
-/*    position: absolute;*/
-/*    display: inline-block;*/
-/*    height: auto;*/
-/*    background-size: cover;*/
-/*    background-color: black;*/
-/*}*/
-
 .about-text {
+    position: relative;
     float: right;
     background-color: #000;
     color: #fafafa;
     font-family: "Roboto" sans-serif;
     text-align: left;
-    padding: 30px,40px;
+    padding: 30px, 40px;
 }
 
 .about-video {
+    position: relative;
     background-size: cover;
     text-align: center;
     float: left;
@@ -217,31 +194,158 @@ body {
 }
 
 .about-heading {
+    padding-top: 25px;
     padding-left: 25px;
     font-family: 'Amatic SC', cursive;
     font-size: 60px;
     color: #fafafa;
-    
+
 }
 
 .about-paragraph {
     padding-left: 25px;
     padding-right: 50px;
-    padding-bottom: 75px;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
+}
+
+/* -------------------------------------------------------------------------Testimonials*/
+
+.testimonials {
+    height: 200px;
+    text-align: center;
+}
+
+.carousel-text {
+    color: orange;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    
+}
+
+.carousel-author {
+    color: orange;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+.carousel-item {
+    padding-left:100px;
+    padding-right: 100px;
+}
+
+/* -------------------------------------------------------Footer*/
+
+.footer {
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    border-top: solid .5px orange;
+    padding-top: 15px;
+}
+
+.list-inline-item {
+    text-align: center;
+    margin-right: 0;
 }
 
 /* -------------------------------------------------------Fixes*/
 
 .hvr-grow {
-    display: block;   /* this code fixes the position of the Name Title  */
+    display: block;
+    /* this code fixes the position of the Name Title  */
 }
 
 a:hover {
-    text-decoration: none;  /* this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
+    text-decoration: none;
+    /* this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
 }
 
 li {
- list-style: none;
+    list-style: none;
 }
+
+/* -------------------------------------------------------BeHeard*/
+
+.beheard {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.beheard-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fafafa;
+    letter-spacing: 6px;
+    padding-top: 20px;
+}
+
+.beheard-subtitle {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fafafa;
+    text-align: left;
+}
+.jumbotron {
+    background-color: orange;
+    filter: opacity(25%);
+    position: absolute;
+    border-radius: 25px;
+    width: 100%;
+    height: 315px;
+    padding: 25px;
+}
+
+
+/* -------------------------------------------------------Contact*/
+
+.contact-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.form-container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-control {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+#yourmessage, #fullname, #phonenumber, #emailaddress {
+    background-color: transparent;
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+
+
