@@ -8,27 +8,26 @@ successful presentations thorugh creative narrative.
 
 ## UX
 
-The website is to highlight Mike's services as a storyteller, it as an art-form and a means of expressing to younger
-generations. 
+The website is to highlight Mike's services as a storyteller & it as an art-form a. 
+I have used an image as the primary theme of a group around a camp fire to denote a cosy storytelling atmosphere within the website. 
 
-The website UX should be have a mix of both the historical nature of storytelling along side a fun, colourful and enjoyable
-user experience in discovering what Mike's storytelling services are all about. 
+I have used orange hovers / assets and text in place to balance the warmth of the fire throught the website. 
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The website uses off-site youtube videos embedded on the site that do not allow the user to expand or navigate to, to keep the user within the websites enviroment, watching the video with the campfire in the background.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+Find below link to a wireframe layouts and ideas:
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
 ## Features
 
+Home Page
+About
 Testimonials
+Dropdown of Services Offered
+Introduction to Be-Heard Business founded by the Client.
 Contact Form
 Video Of Mike Explaining His Thoughts On Storytelling
 Images alongside text.
-About Mike / Contact and Bookings
-Mikes next venue...
 Highlighting and link to his company "BeHeard"
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
@@ -42,9 +41,18 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Another feature idea
+- Mikes next venue...
+- Book mike. 
 
 ## Technologies Used
+
+HTML5
+CSS3
+Bootstrap CSS CDN
+Google Fonts CDN
+Font-Awesome CDN
+Bootstram JS CDN (for Testimonials only using carousel component)
+
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
@@ -88,7 +96,9 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Content
 
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- 1 free-to-use images were obtained from https://www.unsplash.com
+- Images of Mike at work were obtained from the author.
+- Videos of Mike at work were obtained from the author. 
 
 ### Media
 - Some free-to-use images were obtained from www.unsplash.com
