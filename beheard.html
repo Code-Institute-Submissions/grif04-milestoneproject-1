@@ -16,16 +16,20 @@
 
 <body>
     <header>
-        <a href="index.html"><div class="logo hvr-grow">Mike Payton</div></a>
+        <a href="index.html">
+            <div class="logo hvr-grow">Mike Payton</div>
+        </a>
+       
         <!--Navigation Only (repeated in all pages)-->
         <div class="row no-gutters menucontainer">
             <div class="col-md-12">
                 <ul class="nav">
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html/#About">About</a>
+                        <a class="nav-link" href="index.html#About">About</a>
                         <!---how to target a section on a page in a href? --->
                     </li>
                     <div class="dropdown">
@@ -40,7 +44,7 @@
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="beheard.html">Be-Heard</a>
+                        <a class="nav-link" href="beheard.html">Corporate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -52,63 +56,173 @@
         <!--navigation end--------------------------->
     </header>
     <section>
-        <!--be-heard-start-------------------------------->
-        <div class="container-fluid">
-            <div class="row no-gutters">
+
+        <!-----BeHeard---Test------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <header>
+            <a href="index.html">
+                <div class="logo hvr-grow">Mike Payton</div>
+            </a>
+            <!--Navigation Only (repeated in all pages)-->
+            <div class="row no-gutters menucontainer">
                 <div class="col-md-12">
-                    <div class="img-fluid" alt="Background Image">
-                        <div class="row no-gutters">
-                            
-                            <div class="col-md-12 beheard">
-                                <div class="jumbotron"></div>
-                                <a href="https://www.beheard.site" target="_blank" span class="hvr-grow"><img src="/assets/images/beheard_nav_logo.png"><span class="sr-only">BeHeard Website.</span></span> 
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <div class="dropdown">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Storytelling</a>
+                            </li>
+                            <ul class="dropdownmenu">
+                                <li class="dropdownitem"><a href="#" class="dropdownLink">Schools</a></li>
+                                <li class="dropdownitem"><a href="#" class="dropdownLink">Performances</a></li>
+                                <li class="dropdownitem"><a href="#" class="dropdownLink">Mexican Tales</a></li>
+                            </ul>
+                        </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="beheard.html">Corporate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--navigation end--------------------------->
+        </header>
+        <section>
+            <!--Home Page-------------------------------->
+            <div class="img-fluid" alt="Background Image">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col title-container beheard">
+                            <a href="#BeHeard">
+                        <img src="assets/images/beheard_nav_logo.png" class="beheard-logo"><span class="sr-only">BeHeard Website.</span></span> 
                                 </a>
-                                <h2 class="beheard-title">Successful Presentations Through Storytelling</h2>
-                                <p class="beheard-subtitle">Be Heard offers bespoke, high impact training for individuals and groups that will transform the way you think about your presentations. These provocative, interactive workshops will help you to mold your ideas into a compelling
-                                    narrative, and give you the tools to deliver your story in a way that will demand the attention of your audience.</p>
-                                <a href="https://www.beheard.site" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Visit Our Website <span class="sr-only">BeHeard Website.</span></a>
+                            <h2 class="beheard-title d-none d-sm-block">Successful Presentations <br> Through Storytelling</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--home end--------------------------->
 
 
+            <!--BeHeard Section----------------------->
+
+            <div class="container-fluid">
+                <div class="row no-gutters about-container">
+
+                    <span class="col-md-8 ol-sm-6 order-xs-12 about-text">
+                        <p class="beheard-paragraph" id=BeHeard>
+                        After being approached by a number of audience members from the business world, Mike began to run training sessions for those who wanted to improve their communication skills in the workplace. As the number of requests grew, Mike founded the company <a href="http://www.beheard.site/" target="_blank">Be-Heard</a>, with fellow storyteller Tim Ralphs. Be Heard offers expert training in all aspects of presentation skills, with a special focus on utilising the power of narrative to get one's message across clearly.
+                       
+                    </p>
+                </span>
+
+                    <span class="col-md-4 col-sm-6 order-xs-1">
+                    <img src="assets/images/mike-beheard.jpg"  class="beheard-image" ariavalue="Mike Payton"> 
+                </span>
+
+                </div>
+            </div>
+            <!--BeHeard End----------------------->
+            <!--Testimoninals BeHeard Start----------------------->
+            <div class="container-fluid testimonials d-none d-sm-block">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <p class="carousel-text">
+                                        <i class="fa fa-quote-left"></i> Mike’s storytelling sessions for the Day of the Dead family event at the Wellcome Collection were the perfect way to celebrate Mexico's most beloved tradition.<br> His passion, enthusiasm
+                                        and incredible talent kept hundreds mesmerised while making it an unforgettable experience for everybody.”</p>
+                                    <p class="carousel-author">-Jimena Gorraez-Belmar, Events Curator, The Wellcome Trust</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="carousel-text">
+                                        <i class="fa fa-quote-left"></i> Mike is constantly updating and refining his repertoire: food related tales; ghost stories from the American south; Chinease miracle tales...to name but a few. <br>He often uses
+                                        music and song to reflect the mood of a story, from American blues to Mexican Huapango.</p>
+                                    <p class="carousel-author">-Artsbeat magazine </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <p class="carousel-text">
+                                        <i class="fa fa-quote-left"></i> Your session and expertise were recognised by the staff you worked with through the exceptionally positive feedback they gave</p>
+                                    <p class="carousel-author">-M Turton, Director of Teaching School. Our Lady of Lourdes Catholic MAT </p>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                     </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                     </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-----BeHeard-Test------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+            <!--be-heard-start-------------------------------->
+            <!--<div class="img-fluid" alt="Background Image">-->
+            <!--    <div class="container-fluid">-->
+            <!--        <div class="row no-gutters">-->
+            <!--            <div class="col-md-12">-->
+            <!--                <div class="row no-gutters">-->
+
+            <!--                    <div class="col-md-12 beheard">-->
+            <!--                        <div class="jumbotron"></div>-->
+            <!--                        <a href="https://www.beheard.site" target="_blank" span class="hvr-grow"><img src="assets/images/beheard_nav_logo.png"><span class="sr-only">BeHeard Website.</span></span> -->
+            <!--                        </a>-->
+            <!--                        <h2 class="beheard-title">Successful Presentations Through Storytelling</h2>-->
+            <!--                        <p class="beheard-subtitle">Be Heard offers bespoke, high impact training for individuals and groups that will transform the way you think about your presentations. These provocative, interactive workshops will help you to mold your ideas into a compelling-->
+            <!--                            narrative, and give you the tools to deliver your story in a way that will demand the attention of your audience.</p>-->
+            <!--                        <a href="https://www.beheard.site" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Visit Our Website <span class="sr-only">BeHeard Website.</span></a>-->
+
+
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--    </div>-->
+            <!--</div>-->
             <!--be-heard-end--------------------------->
-    </section>
-   
+        </section>
+
 </body>
-    <!---Footer--repeated------------------->
-    <footer class="container-fluid footer">
-        <div class="row">
-            <div class="col">
-                <!--<p>Hidden - (Optional Content)</p>-->
-            </div>
-            <div class="col list-inline-item">
-                <li>
-                    <a target="_blank" href="#">
+<!---Footer--repeated------------------->
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="col">
+            <!--<p>Hidden - (Optional Content)</p>-->
+        </div>
+        <div class="col list-inline-item">
+            <li>
+                <a target="_blank" href="#">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook.</span>
                          </a>
-                    <a target="_blank" href="#">
+                <a target="_blank" href="#">
                             <i class="fa fa-instagram " aria-hidden="true"></i>
                             <span class="sr-only">Instagram.</span>
                          </a>
-                    <a target="_blank" href="#">
+                <a target="_blank" href="#">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                             <span class="sr-only">LinkedIn.</span>
                          </a>
-                    <a target="_blank" href="#">
-                            <i class="fa fa-pinterest" aria-hidden="true"></i>
-                            <span class="sr-only">Pinterest.</span>
-                        </a>
-                </li>
-            </div>
-            <div class="col">
-                <p class="text-footer">hello@mikepayton.org</p>
-            </div>
+            </li>
         </div>
+        <div class="col">
+            <p class="text-footer">hello@mikepayton.org</p>
+        </div>
+    </div>
 
-    </footer>
-    <!----- Footer End ----->
+</footer>
+<!----- Footer End ----->
+
 </html>
