@@ -1,7 +1,7 @@
 /* -------------------------------------------------------Background Image / Logo */
 
 .img-fluid {
-    background-image: url(assets/images/background-image.jpg);
+    background-image: url(../images/background-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
