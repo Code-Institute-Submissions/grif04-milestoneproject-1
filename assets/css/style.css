@@ -17,12 +17,86 @@
     position: fixed;
     z-index: 1;
     padding-left: 25px;
+    padding-top: 10px;
 }
 
-/* -------------------------------------------------------Navigation Bar */
+/* ------------------------Nav Bar Responsive Behaviour */
 
-.nav {
+@media (max-width:720px) {
+    .nav {
+        display: none;
+    }
+}
+
+
+@media (min-width:720px) {
+    .fa-bars {
+        display: none;
+    }
+}
+
+
+
+/* ------------------------Responsive Toggle Menu */
+
+.nav-toggle:checked ~ nav-responsive {  /*----------hamburger/toggle behaviour ---------*/
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255,165,0,0.9);
+}
+
+.nav-toggle {
+    display: none;                 /*----------hidden checkboxl ---------*/
+}
+
+.nav-toggle-label {              /*----------hamburger label position ---------*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    padding-right: 15px;
+    z-index: 2;
+}
+
+.fa-bars {
+    padding-top: 10px;          /*----------hamburger icon positions ---------*/
+}
+
+/* -------------------------------------------------------Navigation Bar Responsive */
+
+nav-responsive {
+    display: none;
     position: fixed;
+    top: 0;
+    right: 0;                        /*----------Hidden Nav for Hamburger Menu ---------*/
+    padding-top: 10px;
+    padding-right: 100px;
+    z-index: 1;                        
+}
+
+.nav-item-responsive a {
+    color: #fafafa;                  /*----------Font Color Change for Responsive Menu---------*/
+}
+
+.nav-item-responsive a:hover {
+    color: #000;                  
+}
+
+.dropdownmenu-responsive {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+/* -------------------------------------------------------Navigation Bar Main */
+
+.nav {;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 100px;
     z-index: 1;
 }
 
@@ -41,7 +115,6 @@
 /* ------------------------Dropdown Menu */
 
 .dropdown {
-    width: auto;
     position: relative;
 }
 
@@ -67,16 +140,24 @@
 
 .dropdown:hover {
     background-color: transparent;
+    color:#fafafa;
 }
 
 .dropdown:hover .dropdownmenu {
     transform: translateY(0px);
+    background-color: orange;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .dropdownLink {
     color: #fafafa;
     font-size: 12px;
     font-family: "Roboto", sans-serif;
+}
+
+.dropdownLink:hover {
+    color: #000;
 }
 
 
@@ -110,7 +191,7 @@
 /* -------------------------------------------------------Colors */
 
 body {
-background-color: red;
+background-color: #000;
 }
 
 .fa {
@@ -132,22 +213,23 @@ background-color: red;
 
 /* -------------------------------------------------------Buttons */
 
-.btn {
+.btn-beheard {
 
     display: inline-block;
-    border-radius: 100px;
-    color: #fafafa;
-    border-color: #fafafa;
-    background-color: #004380;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #004380;
+    color: #000;
+    background-color: orange;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
-/*.btn:hover {*/
-/*    color: #fafafa;*/
-/*    background-color: blue;*/
-    /* this is an override of the hvr-grow animation for home page buttons that is resetting the colour to black */
-/*}*/
+.btn-beheard:hover {
+    color: #fafafa;
+    background-color: #004380;
+    border-color: #fafafa;
+}
 
 
 
@@ -267,6 +349,14 @@ background-color: red;
     margin-right: 0;
 }
 
+.footer-mail {
+    color: #fafafa;
+}
+
+.footer-mail:hover {
+    color: orange;
+}
+
 /* -------------------------------------------------------Fixes*/
 
 .hvr-grow {
@@ -289,7 +379,7 @@ text-align: center;
 }
 
 .beheard-logo {
-    /* needs replacing */
+    height: 50px;
 }
 
 
@@ -299,7 +389,17 @@ text-align: center;
     font-size: 16px;
     color: #fafafa;
     letter-spacing: 6px;
-    padding-top: 50px;
+    padding-top: 25px;
+}
+
+.beheard-about-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fafafa;
+    letter-spacing: 3px;
+    padding-left:25px;
+    padding-top: 25px;
 }
 
 
@@ -320,8 +420,23 @@ text-align: center;
     font-weight: 100;
 }
 
+.btn .btn-beheard {
+    border-radius: 10px;
+    border-color: #fafafa;
+    background-color: orange;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn .btn-beheard:hover {
+    color: #fafafa;
+    background-color: #004380;
+    border-color: #fafafa;
+}
 /* -------------------------------------------------------Contact*/
 
+.contact-container {
+    padding-bottom: 50px;
+}
 .contact-title {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -348,6 +463,20 @@ text-align: center;
 .form-control {
     margin-top: 5px;
     margin-bottom:5px;
+}
+
+.contact-heading {
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    padding-left: 25px;
+    text-align: right;
+}
+
+.contact-paragraph {
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    padding-left: 25px;
+    text-align: right;
 }
 
 #yourmessage, #fullname, #phonenumber, #emailaddress {

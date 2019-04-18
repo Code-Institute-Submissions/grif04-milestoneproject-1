@@ -8,57 +8,41 @@ successful presentations thorugh creative narrative.
 
 ## UX
 
-The website is to highlight Mike's services as a storyteller & it as an art-form a. 
+The website is to highlight Mike's services as a Storyteller.
 I have used an image as the primary theme of a group around a camp fire to denote a cosy storytelling atmosphere within the website. 
 
 I have used orange hovers / assets and text in place to balance the warmth of the fire throught the website. 
 
-The website uses off-site youtube videos embedded on the site that do not allow the user to expand or navigate to, to keep the user within the websites enviroment, watching the video with the campfire in the background.
+The website uses off-site youtube videos embedded on the site that do not allow the user to expand or navigate to, to keep the user within the websites enviroment.
 
 Find below link to a wireframe layouts and ideas:
 
 
 ## Features
 
-Home Page
-About
-Testimonials
-Dropdown of Services Offered
-Introduction to Be-Heard Business founded by the Client.
-Contact Form
-Video Of Mike Explaining His Thoughts On Storytelling
-Images alongside text.
-Highlighting and link to his company "BeHeard"
+- Home Page
+- About
+- Testimonials
+- Dropdown of Services Offered & Responsive Nav Bar
+- Introduction to Be-Heard Business founded by the Client and links to external site. 
+- Contact Form
+- Video Of Mike Explaining His Thoughts On Storytelling
+- Images alongside text.
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-- Mikes next venue...
-- Book mike. 
+### Features Left to Implement-
+- Mikes next venue.
+- Booking System. 
+- Story Archives.
+- Requested page Updates from Client. 
 
 ## Technologies Used
 
-HTML5
-CSS3
-Bootstrap CSS CDN
-Google Fonts CDN
-Font-Awesome CDN
-Bootstram JS CDN (for Testimonials only using carousel component)
-
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
+- HTML5
+- CSS3
+- Bootstrap CSS CDN
+- Google Fonts CDN
+- Font-Awesome CDN
+- Bootstram JS CDN (for Testimonials only using carousel component)
 
 ## Testing
 
@@ -82,30 +66,24 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+- IDE - Cloud9 
+- Deployed on GitHub at: https://github.com/grif04/milestoneproject-1
+- Github Pages: https://grif04.github.io/milestoneproject-1/
 
 
 ## Credits
 
-### Content
+- Mentor: Ravi Lakhotia 
 
-- 1 free-to-use images were obtained from https://www.unsplash.com
-- Images of Mike at work were obtained from the author.
-- Videos of Mike at work were obtained from the author. 
-
-### Media
-- Some free-to-use images were obtained from www.unsplash.com
-- Images of Mike at work were obtained from the author.
-- Videos of Mike at work were obtained from the author. 
+### Media & Content 
+- Background Image: free-to-use images were obtained from www.unsplash.com
+- Images of Mike at work were obtained from the author. www.mikepayton.org
+- Videos of Mike at work were obtained from the author. www.mikepayton.org
+- BeHeard Logo and Content. from www.beheard.site
 
 ### Acknowledgements
 
 - I received inspiration for this project from my wife and friends. 
 - I researched some similar sites for ideas (https://www.echostories.com/services/) (https://storyteller.ie/about/)
+- Push Pull Orders - https://bootstrapcreative.com/bootstrap-push-pull-column-ordering-tutorial/
+- Responsive Nav Bar - https://www.youtube.com/watch?v=8QKOaTYvYUA&t=820s
