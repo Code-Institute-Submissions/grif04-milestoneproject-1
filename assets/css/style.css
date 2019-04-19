@@ -5,13 +5,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-height: 100vh;
+    padding-bottom: 15%;
 }
 
 .logo {
-    
+
     font-family: 'Amatic SC', cursive;
-    font-size: 24px;
+    font-size: 28px;
     color: orange;
     float: left;
     position: fixed;
@@ -39,19 +39,22 @@
 
 /* ------------------------Responsive Toggle Menu */
 
-.nav-toggle:checked ~ nav-responsive {  /*----------hamburger/toggle behaviour ---------*/
+.nav-toggle:checked~nav-responsive {
+    /*----------hamburger/toggle behaviour ---------*/
     display: block;
     width: 100%;
-    position: absolute;
-    background-color: rgba(255,165,0,0.9);
+    position: fixed;
+    background-color: rgba(255, 165, 0, 0.9);
 }
 
 .nav-toggle {
-    display: none;                 /*----------hidden checkboxl ---------*/
+    display: none;
+    /*----------hidden checkbox ---------*/
 }
 
-.nav-toggle-label {              /*----------hamburger label position ---------*/
-    position: absolute;
+.nav-toggle-label {
+    /*----------hamburger label position ---------*/
+    position: fixed;
     right: 0;
     top: 0;
     padding-top: 10px;
@@ -60,7 +63,8 @@
 }
 
 .fa-bars {
-    padding-top: 10px;          /*----------hamburger icon positions ---------*/
+    padding-top: 10px;
+    /*----------hamburger icon positions ---------*/
 }
 
 /* -------------------------------------------------------Navigation Bar Responsive */
@@ -69,18 +73,20 @@ nav-responsive {
     display: none;
     position: fixed;
     top: 0;
-    right: 0;                        /*----------Hidden Nav for Hamburger Menu ---------*/
+    right: 0;
+    /*----------Hidden Nav for Hamburger Menu ---------*/
     padding-top: 10px;
     padding-right: 100px;
-    z-index: 1;                        
+    z-index: 1;
 }
 
 .nav-item-responsive a {
-    color: #fafafa;                  /*----------Font Color Change for Responsive Menu---------*/
+    color: #fafafa;
+    /*----------Font Color Change for Responsive Menu---------*/
 }
 
 .nav-item-responsive a:hover {
-    color: #000;                  
+    color: #000;
 }
 
 .dropdownmenu-responsive {
@@ -91,7 +97,8 @@ nav-responsive {
 
 /* -------------------------------------------------------Navigation Bar Main */
 
-.nav {;
+.nav {
+    ;
     position: fixed;
     top: 0;
     right: 0;
@@ -108,11 +115,8 @@ nav-responsive {
     color: #fafafa;
 }
 
-.menucontainer {
-    padding-left: 60%;
-}
 
-/* ------------------------Dropdown Menu */
+/* ------------------------Dropdown Menu Main */
 
 .dropdown {
     position: relative;
@@ -124,7 +128,7 @@ nav-responsive {
     position: absolute;
     text-align: left;
     z-index: -1;
-    transform: translateY(-125%);
+    transform: translateY(-150%);
     transition: transform .5s ease-in;
 
 }
@@ -140,7 +144,7 @@ nav-responsive {
 
 .dropdown:hover {
     background-color: transparent;
-    color:#fafafa;
+    color: #fafafa;
 }
 
 .dropdown:hover .dropdownmenu {
@@ -191,8 +195,10 @@ nav-responsive {
 /* -------------------------------------------------------Colors */
 
 body {
-background-color: #000;
+    background-color: #000;
 }
+
+
 
 .fa {
     color: #fafafa;
@@ -211,33 +217,11 @@ background-color: #000;
     font-weight: 100;
 }
 
-/* -------------------------------------------------------Buttons */
-
-.btn-beheard {
-
-    display: inline-block;
-    text-align: center;
-    border-radius: 10px;
-    border-color: #004380;
-    color: #000;
-    background-color: orange;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-}
-
-.btn-beheard:hover {
-    color: #fafafa;
-    background-color: #004380;
-    border-color: #fafafa;
-}
-
-
-
 /* -------------------------------------------------------Paddings & Margins */
 
 .title-container {
     padding-top: 15%;
-    padding-bottom: 15%;
+    padding-bottom: 100px
 }
 
 .row {
@@ -251,17 +235,26 @@ background-color: #000;
 
 
 
-/* -------------------------------------------------------------------------About Section*/
+/* -------------------------------------------------------------------------Text and Paragraphs (About Original) Section*/
+
+.box-about {
+    display: block;
+    height: .5px;
+    width: 75%;
+    background-color: orange;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
 
 .about-container {
-    padding-bottom: 25px;
+    padding: 35px;
     position: relative;
 }
 
 .about-text {
     position: relative;
     float: right;
-    background-color: #000;
+    font-size: 14px;
     color: #fafafa;
     font-family: "Roboto" sans-serif;
     text-align: left;
@@ -269,26 +262,22 @@ background-color: #000;
 
 .about-video {
     position: relative;
-    background-color: #000;
     text-align: center;
     padding-top: 35px;
     filter: grayscale(100%) brightness(125%)
 }
 
-.about-heading {
+.content-heading {
     position: relative;
     padding-top: 25px;
-    padding-left: 25px;
     font-family: 'Amatic SC', cursive;
     font-size: 60px;
     color: #fafafa;
 
 }
 
-.about-paragraph{
+.content-paragraph {
     position: relative;
-    padding-left: 25px;
-    padding-right: 50px;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
@@ -296,8 +285,7 @@ background-color: #000;
 /* -------------------------------------------------------------------------Testimonials*/
 
 .testimonials {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 35px;
     position: relative;
     background-color: #000;
     text-align: center;
@@ -310,32 +298,246 @@ background-color: #000;
     font-size: 12px;
     font-weight: 100;
     font-style: italic;
-    
+
 }
 
 .carousel-author {
-        position: relative;
+    position: relative;
     color: orange;
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     font-weight: 100;
     font-style: normal;
     text-align: center;
-    
+
 }
 
 .carousel-item {
     position: relative;
 }
 
+
+/* -------------------------------------------------------Styles*/
+
+/*.hvr-grow {*/
+/*    display: block;*/
+    /* this code fixes the position of the Name Title  */
+/*}*/
+
+a:hover {
+    text-decoration: none;
+     /*this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
+}
+
+li {
+    list-style: none;
+}
+/* -------------------------------------------------------Storytelling Start Home*/
+.section-container-storytelling {
+    padding: 35px;
+    border-top: solid .5px orange;
+    
+}
+
+.storytelling-heading {
+    position: relative;
+    text-align: center;
+    padding-left: 0;
+}
+
+.box-storytelling {
+    display: block;
+    height: .5px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: orange;
+    margin-bottom: 15px;
+}
+
+.storytelling-headers {
+    
+    padding-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: orange;
+    text-align: left;
+    letter-spacing: 6px;
+    padding-top: 25px;
+    padding-left: 15px;
+    
+}
+
+.storytelling-text {
+    position: relative;
+    padding: 15px;
+    font-size: 14px;
+    color: #fafafa;
+    font-family: "Roboto" sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.btn-storytelling {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    background-color: orange;
+    position: relative;
+    display: inline-block;
+}
+
+/* -------------------------------------------------------Storytelling End Home*/
+
+
+/* -------------------------------------------------------BeHeard*/
+
+
+.section-container-beheard {
+    position: relative;
+    padding: 35px;
+    background-color: #004380;
+    border-top: solid .5px orange;
+}
+.beheard {
+    text-align: center;
+}
+
+.beheard-logo {
+    height: 50px;
+    margin-top: 25px;
+}
+
+.beheard-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fafafa;
+    letter-spacing: 6px;
+    padding-top: 25px;
+}
+
+.beheard-image {
+    max-width: 100%;
+    position: relative;
+    border-style: solid;
+    border-color: #fafafa;
+    margin-top: 35px;
+}
+
+.btn-beheard {
+
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    background-color: orange;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.btn-beheard:hover {
+    color: #fafafa;
+    background-color: #004380;
+    border-color: #fafafa;
+}
+
+.btn .btn-beheard {
+    border-color: #fafafa;
+    background-color: orange;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn .btn-beheard:hover {
+    color: #fafafa;
+    background-color: #004380;
+    border-color: #fafafa;
+}
+
+a .link {
+    color: orange;
+}
+/* -------------------------------------------------------Contact*/
+
+.section-container-contact {
+    padding: 35px;
+    padding-bottom: 100px;
+    border-top: solid .5px orange;
+    background-color: #000;
+}
+
+.contact-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.contact-subtitle {
+    padding-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 25px;
+}
+
+.box-footer {
+    display: block;
+    height: .5px;
+    width: 75%;
+    margin: 0 auto;
+    background-color: orange;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    padding-left: 50px;
+}
+
+.form-control {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-heading {
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.contact-paragraph {
+    font-family: "Roboto", sans-serif;
+    color: #fafafa;
+    padding-left: 25px;
+    text-align: center;
+}
+
+#yourmessage,
+#fullname,
+#phonenumber,
+#emailaddress {
+    background-color: transparent;
+    color: orange;
+    border-color: #fafafa;
+}
+
+button {
+    margin-top: 15px;
+}
+
+
 /* -------------------------------------------------------Footer*/
 
-.footer {
-    height: 60px;
-    margin: 0 auto;
-    position: relative;
+.section-container-footer {
+    position: fixed;
     bottom: 0;
-    width: 100%;
     background-color: #000;
     border-top: solid .5px orange;
     padding-top: 15px;
@@ -356,134 +558,3 @@ background-color: #000;
 .footer-mail:hover {
     color: orange;
 }
-
-/* -------------------------------------------------------Fixes*/
-
-.hvr-grow {
-    display: block;
-    /* this code fixes the position of the Name Title  */
-}
-
-a:hover {
-    text-decoration: none;
-    /* this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
-}
-
-li {
-    list-style: none;
-}
-
-/* -------------------------------------------------------BeHeard*/
-.beheard {
-text-align: center;
-}
-
-.beheard-logo {
-    height: 50px;
-}
-
-
-.beheard-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #fafafa;
-    letter-spacing: 6px;
-    padding-top: 25px;
-}
-
-.beheard-about-title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #fafafa;
-    letter-spacing: 3px;
-    padding-left:25px;
-    padding-top: 25px;
-}
-
-
-.beheard-image {
-    max-width: 100%;
-    position: relative;
-    background-color: #000;
-    text-align: center;
-    padding: 35px;
-}
-
-.beheard-paragraph {
-    position: relative;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 50px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-}
-
-.btn .btn-beheard {
-    border-radius: 10px;
-    border-color: #fafafa;
-    background-color: orange;
-    font-family: "Roboto", sans-serif;
-}
-
-.btn .btn-beheard:hover {
-    color: #fafafa;
-    background-color: #004380;
-    border-color: #fafafa;
-}
-/* -------------------------------------------------------Contact*/
-
-.contact-container {
-    padding-bottom: 50px;
-}
-.contact-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    color: #fafafa;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.contact-subtitle {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    color: #fafafa;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-}
-
-.form-container {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.form-control {
-    margin-top: 5px;
-    margin-bottom:5px;
-}
-
-.contact-heading {
-    font-family: "Roboto", sans-serif;
-    color: #fafafa;
-    padding-left: 25px;
-    text-align: right;
-}
-
-.contact-paragraph {
-    font-family: "Roboto", sans-serif;
-    color: #fafafa;
-    padding-left: 25px;
-    text-align: right;
-}
-
-#yourmessage, #fullname, #phonenumber, #emailaddress {
-    background-color: transparent;
-    color: #fafafa;
-    border-color: #fafafa;
-}
-
-
-
