@@ -204,7 +204,7 @@ nav-responsive {
     color: #fafafa;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
 }
 
 .subtitle {
@@ -302,6 +302,7 @@ body {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
+    padding-right: 35px;
 }
 
 /* -------------------------------------------------------------------------Testimonials*/
@@ -431,7 +432,7 @@ li {
     font-weight: 300;
     font-size: 16px;
     color: #fafafa;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     padding-top: 25px;
 }
 
@@ -443,8 +444,7 @@ li {
     margin-top: 35px;
 }
 
-.btn-beheard {
-
+.btn-main {
     display: inline-block;
     text-align: center;
     border-radius: 10px;
@@ -452,25 +452,15 @@ li {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.btn-beheard:hover {
+.btn-main:hover {
     color: #fafafa;
     background-color: #004380;
     border-color: #fafafa;
 }
 
-.btn .btn-beheard {
-    border-color: #fafafa;
-    background-color: orange;
-    font-family: "Roboto", sans-serif;
-}
-
-.btn .btn-beheard:hover {
-    color: #fafafa;
-    background-color: #004380;
-    border-color: #fafafa;
-}
 
 /* -------------------------------------------------------Contact*/
 
@@ -498,7 +488,7 @@ li {
     color: #fafafa;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     margin-bottom: 25px;
 }
 
@@ -658,6 +648,6 @@ padding: 35px;
     font-family: 'Amatic SC', cursive;
     font-size: 20px;
     color: #fafafa;
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     margin: 0 auto;
 }
