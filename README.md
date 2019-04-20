@@ -34,6 +34,8 @@ Find below link to a wireframe layouts and ideas:
 - Booking System. 
 - Story Archives.
 - Requested page Updates from Client. 
+- Navigation JavaScript - To Fix the Removeal of  Menu when clicked. 
+- Navigation Javascript - Change Background Colour on Scroll down of Main Navigation. 
 
 ## Technologies Used
 
