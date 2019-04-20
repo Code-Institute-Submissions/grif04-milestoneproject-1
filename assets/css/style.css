@@ -20,6 +20,20 @@
     padding-top: 10px;
 }
 
+.logo-sub {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    color: orange;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    padding-left: 25px;
+    padding-top: 43px;
+
+}
+
 /* ------------------------Nav Bar Responsive Behaviour */
 
 @media (max-width:720px) {
@@ -90,9 +104,23 @@ nav-responsive {
 }
 
 .dropdownmenu-responsive {
-    position: relative;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    position: absolute;
+    text-align: left;
+    z-index: 1;
+    transform: translateX(-400%);
+    transition: transform .5s ease-in;
+
+}
+
+.dropdown-responsive:hover .dropdownmenu-responsive {
+    transform: translateX(25px);
+    background-color: orange;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: static;
 }
 
 /* -------------------------------------------------------Navigation Bar Main */
@@ -140,11 +168,6 @@ nav-responsive {
     background-color: transparent;
     padding: 10px;
 
-}
-
-.dropdown:hover {
-    background-color: transparent;
-    color: #fafafa;
 }
 
 .dropdown:hover .dropdownmenu {
@@ -319,24 +342,21 @@ body {
 
 /* -------------------------------------------------------Styles*/
 
-/*.hvr-grow {*/
-/*    display: block;*/
-    /* this code fixes the position of the Name Title  */
-/*}*/
-
 a:hover {
     text-decoration: none;
-     /*this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
+    /*this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
 }
 
 li {
     list-style: none;
 }
+
 /* -------------------------------------------------------Storytelling Start Home*/
+
 .section-container-storytelling {
     padding: 35px;
     border-top: solid .5px orange;
-    
+
 }
 
 .storytelling-heading {
@@ -355,7 +375,7 @@ li {
 }
 
 .storytelling-headers {
-    
+
     padding-bottom: 15px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -365,7 +385,7 @@ li {
     letter-spacing: 6px;
     padding-top: 25px;
     padding-left: 15px;
-    
+
 }
 
 .storytelling-text {
@@ -389,9 +409,7 @@ li {
 
 /* -------------------------------------------------------Storytelling End Home*/
 
-
 /* -------------------------------------------------------BeHeard*/
-
 
 .section-container-beheard {
     position: relative;
@@ -399,6 +417,7 @@ li {
     background-color: #004380;
     border-top: solid .5px orange;
 }
+
 .beheard {
     text-align: center;
 }
@@ -457,6 +476,7 @@ li {
 a .link {
     color: orange;
 }
+
 /* -------------------------------------------------------Contact*/
 
 .section-container-contact {
@@ -557,4 +577,92 @@ button {
 
 .footer-mail:hover {
     color: orange;
+}
+
+/* --------------------------------------------------------------------------------Schools Page*/
+
+/* -------------------------------------------------------Why Storytelling*/
+
+.schools-image {
+    padding: 25px 25px 0px 25px;
+    max-width: 100%;
+    position: relative;
+}
+
+.caption {
+    color: #808080;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.learning-list {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fafafa;
+    list-style-position: outside;
+    list-style: square;
+}
+
+.feedback-heading {
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    color: #fafafa;
+    padding-bottom: 35px;
+}
+
+/* -------------------------------------------------------Feedback*/
+
+.section-container-feedback-schools {
+    background-color: orange;
+    color: #fafafa;
+}
+
+.carousel-inner {
+    padding: 0px 50px 50px 50px;
+}
+
+.carousel-text-feedback {
+    position: relative;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+.carousel-author-feedback {
+    position: relative;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+
+/* --------------------------------------------------------------------------------Mexican Tales Page*/
+
+.mexican-video {
+    position: relative;
+
+text-align: center;
+padding: 35px;
+}
+
+/* --------------------------------------------------------------------------------Performances*/
+
+.content-sub-heading {
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    color: #fafafa;
+    letter-spacing: 10px;
+    margin: 0 auto;
 }
