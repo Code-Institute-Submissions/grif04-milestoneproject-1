@@ -1,3 +1,28 @@
+/* CSS Contents */
+
+/* --- 1 ) Background Image/ Logo */
+/* --- 2 ) Media Queries */
+/* --- 3 ) Style Fixes */
+/* --- 4 ) Main Buttons*/
+/* --- 5 ) Responsive Toggle Button */
+/* --- 6 ) Navigation Bar Responsive */
+/* --- 7 ) Navigation Bar Main */
+/* --- 8 ) Headings and Paragraphs */
+/* --- 9 ) About Section (About & All Rest of Content Original) */
+/* --- 10 ) Testimonials */
+/* --- 11 ) Storytelling - Home Section*/
+/* --- 12 ) BeHeard - Home Section*/
+/* --- 13 ) Contact */
+/* --- 14 ) Footer*/
+/* --- 15 ) Schools Page*/
+/* --- 16) Mexican Tales Page*/
+/* --- 17) Performances Page*/
+/* --- 18) End*/
+
+
+
+
+
 /* -------------------------------------------------------Background Image / Logo */
 
 .img-fluid {
@@ -34,7 +59,7 @@
 
 }
 
-/* ------------------------Nav Bar Responsive Behaviour */
+/* ------------------------Nav Bar Responsive Behaviour Media Queries */
 
 @media (max-width:720px) {
     .nav {
@@ -49,25 +74,55 @@
     }
 }
 
+/* -------------------------------------------------------Style Fixes*/
+
+a:hover {
+    text-decoration: none;
+    /*this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
+}
+
+li {
+    list-style: none;
+}
+
+/* --------------------------------------------------------------------Main Buttons*/
+
+.btn-main {
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    background-color: orange;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-main:hover {
+    color: #fafafa;
+    background-color: #004380;
+    border-color: #fafafa;
+}
 
 
-/* ------------------------Responsive Toggle Menu */
 
+/* ------------------------Responsive Toggle Button ------ */
+
+/*----------hamburger/toggle behaviour ---------*/
 .nav-toggle:checked~nav-responsive {
-    /*----------hamburger/toggle behaviour ---------*/
     display: block;
     width: 100%;
     position: fixed;
     background-color: rgba(255, 165, 0, 0.9);
 }
 
+/*----------hidden checkbox ---------*/
 .nav-toggle {
     display: none;
-    /*----------hidden checkbox ---------*/
 }
 
+/*----------hamburger label position ---------*/
 .nav-toggle-label {
-    /*----------hamburger label position ---------*/
     position: fixed;
     right: 0;
     top: 0;
@@ -76,27 +131,29 @@
     z-index: 2;
 }
 
+/*----------hamburger icon positions ---------*/
 .fa-bars {
     padding-top: 10px;
-    /*----------hamburger icon positions ---------*/
 }
 
 /* -------------------------------------------------------Navigation Bar Responsive */
+
+/*----------Hidden Nav for Hamburger Menu ---------*/
 
 nav-responsive {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
-    /*----------Hidden Nav for Hamburger Menu ---------*/
     padding-top: 10px;
     padding-right: 100px;
     z-index: 1;
 }
 
+/*----------Font Color Change for Responsive Menu---------*/
+
 .nav-item-responsive a {
     color: #fafafa;
-    /*----------Font Color Change for Responsive Menu---------*/
 }
 
 .nav-item-responsive a:hover {
@@ -215,13 +272,30 @@ nav-responsive {
     text-align: center;
 }
 
-/* -------------------------------------------------------Colors */
+.content-heading {
+    position: relative;
+    padding-top: 25px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    color: #fafafa;
+
+}
+
+.content-paragraph {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    padding-right: 35px;
+}
+
+/* ------------------------------------------------------- Body Background Color  */
 
 body {
     background-color: #000;
+    /*--!important--*/
 }
 
-
+/* -------------------------------------Font Awesome Icon Behaviour */
 
 .fa {
     color: #fafafa;
@@ -234,21 +308,12 @@ body {
     color: orange;
 }
 
-.text-footer {
-    color: #fafafa;
-    text-align: center;
-    font-weight: 100;
-}
 
 /* -------------------------------------------------------Paddings & Margins */
 
 .title-container {
     padding-top: 15%;
     padding-bottom: 100px
-}
-
-.row {
-    margin-right: 0;
 }
 
 .container-fluid {
@@ -340,18 +405,8 @@ body {
 }
 
 
-/* -------------------------------------------------------Styles*/
 
-a:hover {
-    text-decoration: none;
-    /*this code fixed an issue i was having where the hover was giving a blue underline from bootstrap for <a> elements */
-}
-
-li {
-    list-style: none;
-}
-
-/* -------------------------------------------------------Storytelling Start Home*/
+/* -------------------------------------------------------Storytelling - Home Section*/
 
 .section-container-storytelling {
     padding: 35px;
@@ -398,18 +453,21 @@ li {
     text-align: left;
 }
 
-.btn-storytelling {
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-bottom: 35px;
-    background-color: orange;
-    position: relative;
-    display: inline-block;
+.jumbotron {
+    border-style: solid;
+    border-color: orange;
+    background-color: transparent;
+    margin: 25px;
+}
+
+.fa-flag, .fa-star, .fa-graduation-cap::before {
+    color: orange;
+    padding-left: 25px;
 }
 
 /* -------------------------------------------------------Storytelling End Home*/
 
-/* -------------------------------------------------------BeHeard*/
+/* -------------------------------------------------------BeHeard Home Section*/
 
 .section-container-beheard {
     position: relative;
@@ -444,23 +502,7 @@ li {
     margin-top: 35px;
 }
 
-.btn-main {
-    display: inline-block;
-    text-align: center;
-    border-radius: 10px;
-    background-color: orange;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.btn-main:hover {
-    color: #fafafa;
-    background-color: #004380;
-    border-color: #fafafa;
-}
-
+/* -------------------------------------------------------BeHeard Home Section End*/
 
 /* -------------------------------------------------------Contact*/
 
@@ -510,13 +552,7 @@ li {
     margin-bottom: 5px;
 }
 
-.contact-heading {
-    font-family: "Roboto", sans-serif;
-    color: #fafafa;
-    padding-left: 25px;
-    text-align: center;
-}
-
+.contact-heading,
 .contact-paragraph {
     font-family: "Roboto", sans-serif;
     color: #fafafa;
@@ -564,6 +600,12 @@ button {
     color: orange;
 }
 
+.text-footer {
+    color: #fafafa;
+    text-align: center;
+    font-weight: 100;
+}
+
 /* --------------------------------------------------------------------------------Schools Page*/
 
 /* -------------------------------------------------------Why Storytelling*/
@@ -600,7 +642,7 @@ button {
     padding-bottom: 35px;
 }
 
-/* -------------------------------------------------------Feedback*/
+/* -------------------------------------------------------School Pages Feedback Carousel*/
 
 .section-container-feedback-schools {
     background-color: orange;
@@ -636,9 +678,8 @@ button {
 
 .mexican-video {
     position: relative;
-
-text-align: center;
-padding: 35px;
+    text-align: center;
+    padding: 35px;
 }
 
 /* --------------------------------------------------------------------------------Performances*/
@@ -651,3 +692,6 @@ padding: 35px;
     letter-spacing: 4px;
     margin: 0 auto;
 }
+
+
+/* --------------------------------------------------------------------------------END*/
