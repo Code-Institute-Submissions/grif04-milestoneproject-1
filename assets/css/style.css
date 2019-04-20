@@ -266,7 +266,6 @@ body {
     width: 75%;
     background-color: orange;
     margin-bottom: 15px;
-    margin-left: 25px;
 }
 
 .about-container {
@@ -471,10 +470,6 @@ li {
     color: #fafafa;
     background-color: #004380;
     border-color: #fafafa;
-}
-
-a .link {
-    color: orange;
 }
 
 /* -------------------------------------------------------Contact*/
