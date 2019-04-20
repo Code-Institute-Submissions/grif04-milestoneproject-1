@@ -43,6 +43,7 @@ Find below link to a wireframe layouts and ideas:
 - Google Fonts CDN
 - Font-Awesome CDN
 - Bootstram JS CDN (for Testimonials only using carousel component)
+- Adobe Illustrator for Logo Tracing
 
 ## Testing
 
